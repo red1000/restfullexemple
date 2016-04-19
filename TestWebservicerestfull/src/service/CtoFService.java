@@ -12,9 +12,9 @@ public class CtoFService {
     public String convertCtoF() {
  
         Double fahrenheit;
-        //Double celsius = 36.8;
+        Double celsius = 36.8;
         fahrenheit = ((celsius * 9) / 5) + 32;
- 
+        // this is my comment 2 
         String result = "@Produces(\"application/xml\") Output: \n\nC to F Converter Output: \n\n" + fahrenheit;
         return "<ctofservice>" + "<celsius>" + celsius + "</celsius>" + "<ctofoutput>" + result + "</ctofoutput>" + "</ctofservice>";
     }
